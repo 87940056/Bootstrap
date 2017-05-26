@@ -1,0 +1,229 @@
+@import url(../base.css);
+body{
+	background-color: #F2F2F2;
+}
+.banner{
+	/*width: 1349px;*/
+	width: 100%;
+	height: 400px;
+	background: url(img/banner.jpg);
+	background-size: cover;
+	margin: 0 auto;
+	position: relative;
+	.banner_bottom{
+		width: 78px;
+		height: 68px;
+		background: url(img/banner_bottom.png);
+		background-size: cover;
+		position: absolute;
+		bottom: -34px;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+}
+.box{
+	width: 1140px;
+	/*width: 85%;*/
+	height: auto;
+	margin: 90px auto 0;
+	overflow: hidden;
+	.boxDiv{
+		float: left;
+		width: 48.5%;
+		height: auto;
+		background-color: #fff;
+		margin-bottom: 30px;
+		a{
+			display: block;
+			img{
+				/*width: 531px;*/
+				width: 94%;
+				/*height: 332px;*/
+				height: 86%;
+				margin: 10px 3% 0 3%;
+			}
+		}
+		span{
+			display: block;
+			font-size: 24px;
+			font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+			color: #777;
+			text-align: center;
+			cursor: default;
+		}
+	}
+	.clear{
+		clear: both;
+	}
+}
+@media screen and (max-width:1150px){
+	.box{
+		width: 100%;
+	}
+}
+@media screen and (max-width:1000px){
+	.box .boxDiv{
+		width: 100%;
+		float: left;
+	}
+}
+
+
+.page{
+	width: 85%;
+	height: 40px;
+	margin: 40px auto 0;
+	position: relative;
+	span{
+		display: block;
+		width: 90px;
+		height: 100%;
+		line-height: 40px;
+		margin: 0 auto;
+		color: #39414a;
+		font-size: 13px;
+	}
+	button{
+		width: 76px;
+		height: 100%;
+		border: 1px solid #39414A;
+		background-color: #F2F2F2;
+		border-radius: 3px;
+		position: absolute;
+		top: 0;
+		right: 20px;
+		cursor: pointer;
+		&:hover{
+			background-color: #4A4849;
+			color: #fff;
+		}
+	}
+}
+.display{
+	width: 100%;
+	height: auto;
+	background-color: #eee;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	span{
+		display: block;
+		width: 650px;
+		height: auto;
+		line-height: 28px;
+		margin: 0 auto;
+		padding-top: 35px;
+		color: #39414a;
+		font-size: 13px;
+		text-align: center;
+	}
+}
+@media screen and (max-width:800px){
+	.display span{
+		width: 100%;
+	}
+}
+
+.bottom{
+	width: 100%;
+	height: auto;
+	background-color: #202020;
+	border-bottom: 1px solid #303030;
+	.bottomBox{
+		width: 80%;
+		height: auto;
+		margin: 0 auto;
+		position: relative;
+		overflow: hidden;
+		.bottom_div{
+			width: 30%;
+			height: auto;
+			padding-bottom: 30px;
+			span{
+				float: left;
+				margin-top: 25px;
+				width: 100%;
+				height: 35px;
+				border-bottom: 1px solid #303030;
+				font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+				font-size: 18px;
+				font-weight: 500px;
+				color: #fff;
+			}
+			a{
+				float: left;
+				margin-top: 15px;
+				width: 100%;
+				height: 35px;
+				border-bottom: 1px dashed #303030;
+				font-size: 14px;
+				font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+				color: #959595;
+				&:hover{
+					color: #fff;
+				}
+			}
+		}
+		.bottom_div2{
+			width: 30%;
+			height: auto;
+			padding-bottom: 30px;
+			span{
+				float: left;
+				margin-top: 25px;
+				width: 100%;
+				height: 35px;
+				border-bottom: 1px solid #303030;
+				font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+				font-size: 18px;
+				font-weight: 500px;
+				color: #fff;
+			}
+			a{
+				float: left;
+				border: 1px solid #303030;
+				padding: 2px 5px 5px 2px;
+				margin-top: 10px;
+				margin-right: 15px;
+				font-size: 14px;
+				color: #959595;
+				&:hover{
+					background-color: #337AB7;
+					color: #fff;
+				};
+			}
+		}
+	}
+}
+@media screen and (max-width:800px){
+	.bottom .bottomBox .bottomDiv{
+		width: 100%;
+		float: left;
+	}
+}
+
+.foot{
+	width: 100%;
+	height: 52px;
+	background-color: #111;
+	.foot_box{
+		width: 25%;
+		height: 100%;
+		margin: 0 auto;
+		span{
+			float: left;
+			line-height: 48px;
+			font-size: 13px;
+			color: #555;
+		}
+		a{
+			float: left;
+			line-height: 48px;
+			font-size: 13px;
+			color: #555;
+			&:hover{
+				text-decoration: underline;
+			};
+		}
+	}
+}
